@@ -2,7 +2,7 @@ import React from 'react';
 
 const App = () => {
   return (
-    <div className="jumbotron"> 
+    <div className="page-header jumbotron"> 
       <h1>
         Fwitter
       </h1>

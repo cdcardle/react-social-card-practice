@@ -1,14 +1,14 @@
 import React from 'react';
 import NewMessage from './NewMessage.js'
 
-const Messages = ({user, handleSubmit}) => {
+const Messages = ({user, handleMessageSubmit}) => {
   return (
     <div>
       <br/>
-      <NewMessage handleSubmit={handleSubmit} />
+      <NewMessage handleMessageSubmit={handleMessageSubmit} />
       <ul className="text-left">
         {user.messages.slice(0).reverse().map(message => 
-          <li class="w-100 border-bottom">
+          <li className="w-100 border-bottom" key={message.id}>
             <small>Post #{message.id} - created at {message.createdAt}</small>
             <p>{message.description}</p>
           </li>

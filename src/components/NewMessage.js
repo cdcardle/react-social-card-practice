@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Messages = ({user, handleSubmit}) => {
+const Messages = ({user, handleMessageSubmit}) => {
   return (
     <div>
-      <form class="form-row" onSubmit={handleSubmit}>
-        <textarea class="form-control" placeholder="New message..."/>
-        <button class="btn btn-sm btn-outline-success" type="submit">Post Message</button>
+      <form className="form-row" onSubmit={handleMessageSubmit}>
+        <input type="text" className="form-control" placeholder="New message..."></input>
+        <button className="btn btn-sm btn-outline-success" type="submit">Post Message</button>
       </form>
     </div>
   )
